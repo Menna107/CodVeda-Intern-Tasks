@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: Nunito, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 25px 10px;
+    /* background-color: black; */
+    color: white;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 200px;
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+
+
+nav ul li a:hover{
+    color: #8B5E3C;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav.scrolled {
+  background-color: rgba(139, 94, 60, 0.7) !important;
+}
+
+/* ------Hero Section-------- */
+header{
+    height: 100vh;
+    background-image: url(../media/heroImage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.title{
+    color: #8B5E3C;
+    font-size: 70px;
+    
+}
+
+header p{
+    font-size: 20px;
+    color: #d7c3b4;
+    margin: 20px 0;
+    max-width: 40%;
+    text-align: center;
+}
+
+.order{
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #d7c3b4;
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: 500;
+    background-color: #8B5E3C;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.order:hover{
+    background-color: #d7c3b4;
+    color: #8B5E3C;
+}
+
+header h1, 
+header p,
+.order {
+    position: relative;
+    z-index: 1;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+/* --------------Slider part-------------- */
+#slider {
+    background-color: #f5e9e0;  /* لون فاتح يتماشى مع البني */
+    border-top: 2px solid #d7c3b4; 
+    border-bottom: 2px solid #d7c3b4;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #8B5E3C;  /* بني غامق */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#slider ul {
+    display: flex;
+    gap: 50px;
+    animation: slider 18s linear infinite;
+}
+
+#slider li {
+    list-style: none;
+    padding: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* --------features Section------------- */
+#features{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#features h2{
+    color: #8B5E3C;
+    font-size: 30px;
+    font-family: Nunito;
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap; 
+}
+.cards {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background-color: #8B5E3C;
+    color: #d7c3b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    width: 350px;
+    min-height: 420px; /* طول أكبر */
+    padding: 40px 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #f5e2d0;
+}
+
+.card h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f2e3da;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.05);
+    background-color: #a07150; 
+}
+
+
+/* -----------Footer----------- */
+footer{
+    margin-top: 50px;
+    height: 20px;
+    padding: 40px 0;
+    font-size: 17px;
+    text-align: center;
+    background-color: #a07150;
+    color: #d7c3b4;
+}
+
+/*--------Responsive----------  */
