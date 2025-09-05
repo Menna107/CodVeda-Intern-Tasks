@@ -26,7 +26,7 @@ body {
 
 .Form{
     width: 70%;
-    height: 70vh;
+    height: 80vh;
     background-color: #ffffff;
     display: flex;
     justify-content: center; 
@@ -84,7 +84,7 @@ body {
     margin-top: 3.125rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.625rem;
+    gap: 5px;
     justify-content: center;
 }
 
@@ -92,7 +92,7 @@ body {
     padding: 0.9375rem 0.9375rem;
     border: 0.0625rem solid #9f9a9a;
     border-radius: 0.3125rem;
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.625rem;
     font-size: 1.0625rem;
 }
 
@@ -124,26 +124,17 @@ body {
     cursor: pointer;
 }
 
-
 .errorMsg{
     display: none;
-    padding: 0.9375rem 0.9375rem;
-    border: 0.0625rem solid red;
     color: red;
-    border-radius: 0.3125rem;
-    margin-bottom: 0.9375rem;
-    font-size: 20px;
+    font-size: 17px;
     flex: 1 1 100%;
 }
 
 .success-msg{
     display: none;
-    padding: 0.9375rem 0.9375rem;
-    border: 0.0625rem solid green;
     color: green;
-    border-radius: 0.3125rem;
-    margin-bottom: 0.9375rem;
-    font-size: 20px;
+    font-size: 17px;
     flex: 1 1 100%;
 }
 
